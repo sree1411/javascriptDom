@@ -1,0 +1,14 @@
+*{
+    font-family: sans-serif;
+    list-style: none;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products li{
+   width: 20%;
+   border: 1px solid black;
+}
