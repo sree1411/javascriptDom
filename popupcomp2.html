@@ -9,8 +9,19 @@
     
 </head>
 <body>
-      <div id="products">
-        <ul >
+      
+       <div id="details" class="open">
+            <button class="btnn" onclick="closeBtn()"> close </button>
+            <p class="titleText"> </p>
+            <p class="priceText"> </p>
+             <p class="descText"></p>
+             <div> 
+                <img  alt="" class="imgs">
+             </div>
+       </div>
+   
+      <div >
+        <ul id="products" >
     
         </ul>
       
@@ -19,9 +30,26 @@
         products.forEach((product, i)=>{
          let newLi = document.createElement("li")
          newLi.innerHTML = product.title
-
+     
+         let newImg = document.createElement('img')
+         newImg.src = product.image
+         newLi.appendChild(newImg)
          document.getElementById('products').appendChild(newLi)
+         newLi.addEventListener('click', ()=>{
+           document.getElementById('details').classList.toggle('active');
+           document.querySelector(".titleText").innerText = product.title
+           document.querySelector(".priceText").innerHTML = product.price
+           document.querySelector(".descText").innerHTML = product.description
+           document.querySelector(".imgs").src = product.image
+           console.log(product.image);
+
+
+         })
+
         })
+        function closeBtn(){
+             document.getElementById('details').classList.toggle("active")
+        }
      </script>
 </body>
 </html>
