@@ -1,0 +1,40 @@
+
+.d1{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block; 
+    vertical-align: middle;
+    line-height: 100px; 
+    text-align: center;
+
+}
+.d2{
+    display: inline-block;
+    text-align: center;
+}
+li{
+  display: inline-block;
+  border: 1px solid black;
+  width: 70px;
+  vertical-align: middle;
+}
+ul{
+    padding-left: 325px;
+}
+.d3{
+    border: 1px solid black;
+    background-color: aquamarine;
+    justify-content: space-between;
+    display: flex;
+}
+ 
+.d4{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block; 
+    vertical-align: middle;
+    line-height: 100px; 
+    text-align: center;
+}
